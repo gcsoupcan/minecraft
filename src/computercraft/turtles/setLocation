@@ -10,6 +10,6 @@ local xPos = tonumber( tArgs[1] )
 local yPos = tonumber( tArgs[2] )
 local zPos = tonumber( tArgs[3] )
 
-os.loadAPI("transformAPI")
+os.loadAPI("transform")
 
 transform.setLocation(xPos, yPos, zPos)
