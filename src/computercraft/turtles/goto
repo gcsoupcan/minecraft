@@ -9,7 +9,7 @@ local xPos = tonumber( tArgs[1] )
 local yPos = tonumber( tArgs[2] )
 local zPos = tonumber( tArgs[3] )
 
-os.loadAPI("transform")
+os.loadAPI("api/transform")
 
 transform.goTo( xPos,yPos,zPos,0,-1 )
 
