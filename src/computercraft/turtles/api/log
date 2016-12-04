@@ -1,0 +1,11 @@
+-- API for outputing to local log
+
+local logFilePath = "log/log.txt"
+
+
+function info(message)
+	local fileHandle = fs.open(logFilePath, "a")
+	fileHandle.writeLine("[info] " .. message)
+	fileHandle.close()
+end
+

@@ -11,7 +11,8 @@ os.loadAPI("transform")
 
 local xDir,zDir = 0,-1  -- 0, -1 is north
 
+os.loadAPI("api/log")
 
 
- a = Read()
- print(a)
+log.info("Hello")
+log.info("Hello2")
