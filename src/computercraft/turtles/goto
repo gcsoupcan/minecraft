@@ -1,0 +1,16 @@
+local tArgs = { ... }
+if #tArgs ~= 3 then
+	print( "Usage: goto <x> <y> <z>" )
+	return
+end
+
+-- Mine in a quarry pattern until we hit something we can't dig
+local xPos = tonumber( tArgs[1] )
+local yPos = tonumber( tArgs[2] )
+local zPos = tonumber( tArgs[3] )
+
+os.loadAPI("transform")
+
+transform.goTo( xPos,yPos,zPos,0,-1 )
+
+print(turtle.getFuelLevel())

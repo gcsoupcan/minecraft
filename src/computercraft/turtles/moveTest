@@ -1,0 +1,17 @@
+os.loadAPI("transform")
+
+--transform.goTo( 2,0,1,0,1 )
+
+--transform.loadLocation("transform.txt")
+
+--transform.saveLocation("transform.txt")
+
+--function goTo( x, y, z, xd, zd )
+--transform.goTo( 0,0,0,0,1 )
+
+local xDir,zDir = 0,-1  -- 0, -1 is north
+
+
+
+ a = Read()
+ print(a)
